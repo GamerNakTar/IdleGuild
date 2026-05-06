@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public sealed class QuestUIController : MonoBehaviour
 {
     [SerializeField] private Button startButton;
-    [SerializeField] private Image progressFill;
+    [SerializeField] private RectTransform progressFillRect;
     [SerializeField, Min(0.1f)] private float questDuration = 5f;
 
     private Coroutine progressRoutine;
@@ -72,9 +72,15 @@ public sealed class QuestUIController : MonoBehaviour
 
     private void SetProgress(float value)
     {
-        if (progressFill != null)
+        if (progressFillRect == null)
         {
-            progressFill.fillAmount = Mathf.Clamp01(value);
+            return;
         }
+
+        var normalizedValue = Mathf.Clamp01(value);
+        var anchorMax = progressFillRect.anchorMax;
+        anchorMax.x = normalizedValue;
+        progressFillRect.anchorMax = anchorMax;
+        progressFillRect.gameObject.SetActive(normalizedValue > 0f);
     }
 }
