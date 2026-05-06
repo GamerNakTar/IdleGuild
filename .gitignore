@@ -1,0 +1,77 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Unity memory captures
+[Mm]emoryCaptures/
+
+# Unity generated asset metadata
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity crash reports
+sysinfo.txt
+
+# Unity package manager
+.upmconfig.toml
+
+# Unity auto-generated solution and project files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Rider / JetBrains
+.idea/
+*.sln.DotSettings.user
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Mobile build outputs
+*.apk
+*.aab
+*.ipa
+
+# Android generated files
+gradleOut/
+ExportedObj/
+
+# iOS generated files
+*.xcworkspace
+xcuserdata/
+DerivedData/
+
+# Keystores and signing files
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+*.provisionprofile
+
+# Common local environment files
+.env
+.env.*
+!.env.example
