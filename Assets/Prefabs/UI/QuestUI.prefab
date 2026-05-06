@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 100002}
   - component: {fileID: 100003}
   - component: {fileID: 100004}
+  - component: {fileID: 100005}
   m_Layer: 5
   m_Name: QuestUI
   m_TagString: Untagged
@@ -99,6 +100,21 @@ MonoBehaviour:
   m_FlexibleWidth: 1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &100005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3c8c18ead34d2685c34e73a3755a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startButton: {fileID: 300004}
+  progressFill: {fileID: 410003}
+  questDuration: 5
 --- !u!1 &200000
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,7 +189,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4292733678
   m_fontColor: {r: 0.93333334, g: 0.91764706, b: 0.8666667, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -202,6 +218,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -430,7 +447,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278588447
   m_fontColor: {r: 0.12156863, g: 0.078431375, b: 0.023529412, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -459,6 +476,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
